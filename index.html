@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Abu Ghaida</title>
-    <link rel="icon" type="image/x-icon" href="adam/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d064d6765b.js" crossorigin="anonymous"></script>
+    <script src="/js/slider.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -64,199 +72,105 @@
     <!--landing-->
     <section id="landing">
 
-        <div class="fluid-container landing-container">
-            <div class="row ">
 
-                <div class="col-lg-6">
-                    <h1 class="landing-header">hi, i’m adam.</h1>
-                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                    <div class="landing-contact-me">
-                        <a href="https://www.linkedin.com"><button type="button" class="btn"><i
-                                    class="fa-brands fa-linkedin fa-2xl landing-contact-me-icon"></i></button></a>
-                        <button type="button" class="btn" href="instagram.com"><i
-                                class="fa-brands fa-square-instagram fa-2xl landing-contact-me-icon"></i></button>
+        <div class="row landing-container fluid-container ">
+
+            <div class="col-lg-5 col-md-12">
+                <h1 class="landing-header">hi, i’m adam. </h1>
+                <p class="landing-text">I'm a full-time student, and since I was 7 years old, a part time developer
+                    intrested in creating an
+                    impact on education through computer science.</p>
+                <p class="landing-text" style="margin-top: 3vh;">Today, I'm working with and learning from <a
+                        href="#testimonials">incredible people</a> intrested in creating an impact on the world.</p>
+                <p class="landing-text" style="margin-top: 3vh;">Away from my desk, I'm probably <a
+                        href="photography.html">taking photos</a>, hanging out with family and friends, or playing
+                    guitar.</p>
+
+
+                <div class="row landing-contact-me align-items-center">
+                    <div class="col-2 LS-left"><a href="linkedin.com"><img class="img-fluid landing-socials "
+                                src="assets/linkedin.png"></a>
+                    </div>
+                    <div class="col-2 LS-right"><a href="instagram.com"><img class="img-fluid landing-socials"
+                                src="assets/instagram.png"></a>
+                    </div>
+                    <div class="col-8 center">
+                        <p id="landing-contact-me-small-text">contact me</p>
                     </div>
                 </div>
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="assets/Rectangle.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-md-1 align-self-end">
+                <div class=" landing-chevron">
+                    <a href="#timeline" style="color: #383838;"><i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 align-self-center landing-face-img-div">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
+                    class="d-block mx-lg-auto img-fluid landing-face-img" alt="Bootstrap Themes" width="700"
+                    height="500" loading="lazy">
+            </div>
+
+        </div>
+
+    </section>
+    <!--Timeline-->
+    <section id="timeline">
+        <div class="timeline-header">
+            <h1 class="timeline-header-text">What I've been up to</h1>
+        </div>
+        <div class="timeline-container">
+
+
+        </div>
+        <div class="container">
+            <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
+                <!-- Timeline -->
+                <ul class="swiper-pagination-custom">
+                    <li class='swiper-pagination-switch first active'><span class='switch-title'>2013</span></li>
+                    <li class='swiper-pagination-switch'><span class='switch-title'>2015</span></li>
+                    <li class='swiper-pagination-switch'><span class='switch-title'>2017</span></li>
+                    <li class='swiper-pagination-switch'><span class='switch-title'>2020</span></li>
+                    <li class='swiper-pagination-switch last'><span class='switch-title'>2022</span></li>
+                    
+                </ul>
+                <!-- Progressbar -->
+                <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+                <!--About that section-->
+
+                <!-- Swiper -->
+                <div class="swiper swiper-container swiper-container--timeline">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><span class="title"><h1>Feeling Scratchy</h1><br>Bored on a sunny Lebanese summer day, I asked my
+                                father for something to do, and was introduced to <a
+                                    href="https://www.scratch.mit.edu">scratch</a>. Here, I learned so much about the
+                                essential foundations of programming and computational thought. Little did I know that the rest of my life would be spent in the world of code.<br><br>What I learned from scratch was that I loved to create things, and that I loved to learn. I created so many games and animations, and I was hooked. Sprites became a part of my life, and I was in love with the idea of creating something from nothing.
+                            </span></div>
+                        <div class="swiper-slide"><span class="title"><h1>Snakes in Boots</h1><br>In 2015, I completed a <a
+                                    href="ADD Course section">course</a> from Pirean Data on python and learned everything from the ground up. I built so many programs and wasted so much time on IDLE creating adventure games and console games. I was in love with the idea of creating something from nothing. I was hooked.<br><br>Leaving what felt like an impractical platform like scratch to Python was a big step, but I was so happy to have taken it. I learned so much about the world of programming, and I was so happy to have taken that step and pushing myself further than I thought I could go.
+                                </span></div>
+                        <div class="swiper-slide"><span class="title"><h1>App Dev</h1><br>Around 2017, I started to get really interested in app development,
+                            and to that end, I learned <b>Swift, Flutter, SwiftUI, Bootstrap, and Dart.</b> In December of 2019, I landed a
+                            keynote presentation at <b>Apple's</b> Today@Apple program as a guest speaker talking about my
+                            journey into iOS app development and helped audience members create their very first app!
+                            <br><br>I also founded the IDJ, an online platform of iOS developers who help each other get
+                            started and answer any questions they might have. I learned so much about leadership and
+                            inclusion while fulfilling that role.
+</span></div>
+                        <div class="swiper-slide"><span class="title"><h1>Finding Moira</h1><br>While I was in quarantine, I realized that what I truly felt passion for was Education. I wanted to help spread the knowledge and skills I accumulated over years of hard work and dedication to as much people as I could.<br><br> I joined dozens of online communities over discord and started teaching a class around the foundations of programming and spent hours shaping the curriculum to each student in the class. It was truly an incredible thing to be part of. Education is the future, and I'm so excited to be a part of it and I'm incredibly excited to leverage computer science to create an impact.
+                        </span></div>
+                        <div class="swiper-slide"><span class="title"><h1>Creating Impact</h1><br>In 2022, I decided to jump in headfirst and complete a 6 month internship with <a href="https://massarat.com">Massarat</a> a startup in Lebanon that is at the forefront of assesments and ed-tech globally. During my internship, I was responsible for the iOS application; I migrated API's, worked on the front end, and also provided feedback from a student presprective only being 16 years old.<br><br>What Massarat taught me was that the real world was not different than my desk. I learned that I could affect change in my community from my study desk and that I didn't need a bachelor's degree to do so.</span></div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Timeline-->
-    <div class="container">
-        <div class="timeline">
-            <div class="timeline-row">
-                <div class="timeline-time">
-                    7:45PM<small>Dec 21</small>
-                </div>
-                <div class="timeline-content">
-                    <i class="icon-attachment"></i>
-                    <h4>example!</h4>
-                    <p>Maxwell Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar, drag &amp; drop
-                        and ion slider.</p>
-                    <div class="thumbs">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            alt="Maxwell Admin">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                            alt="Maxwell Admin">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                            alt="Maxwell Admin">
-                    </div>
-                    <div class="">
-                        <span class="badge badge-pill">Sales</span>
-                        <span class="badge badge-pill">Admin</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-row">
-                <div class="timeline-time">
-                    8:00 AM<small>Dec 18</small>
-                </div>
-                <div class="timeline-content">
-                    <i class="icon-code"></i>
-                    <h4>example!</h4>
-                    <p>
-                        Maxwell Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar.
-                    </p>
-                    <div class="thumbs">
-                        <div class="thumbs">
-                            <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                                alt="Maxwell Admin">
-                            <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                                alt="Maxwell Admin">
-                            <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                                alt="Maxwell Admin">
-                        </div>
-                    </div>
-                    <div class="">
-                        <span class="badge badge-pill">Graphs</span>
-                        <span class="badge badge-pill">Chat</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-row">
-                <div class="timeline-time">
-                    7:25 PM<small>Dec 6</small>
-                </div>
-                <div class="timeline-content">
-                    <i class="icon-turned_in_not"></i>
-                    <h4>Best Admin Template!</h4>
-                    <p>Custom C3 graphs, Custom flot graphs, flot graphs, small graphs, Sass, profile and timeline.</p>
-                    <div>
-                        <span class="badge badge-pill">Invoice</span>
-                        <span class="badge badge-pill">Tasks</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-row">
-                <div class="timeline-time">
-                    3:55 PM<small>Dec 26</small>
-                </div>
-                <div class="timeline-content">
-                    <i class="icon-directions"></i>
-                    <h4>Maxwell Admin</h4>
-                    <p>Maxwell Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar, drag &amp; drop
-                        and ion slider.</p>
-                    <div>
-                        <span class="badge badge-pill">Profile</span>
-                        <span class="badge badge-pill">Sales</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-row">
-                <div class="timeline-time">
-                    5:24 PM<small>Dec 12</small>
-                </div>
-                <div class="timeline-content">
-                    <i class="icon-change_history"></i>
-                    <h4>Maxwell Dashboard</h4>
-                    <p class="no-margin">Maxwell Admin dashboard includes invoice, profile, tasks, gallery, projects,
-                        maintanence.</p>
-                    <div class="thumbs">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Maxwell Admin">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar6.png"
-                            alt="Maxwell Admin">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar5.png"
-                            alt="Maxwell Admin">
-                    </div>
-                    <div>
-                        <span class="badge badge-pill">Analytics</span>
-                        <span class="badge badge-pill">Contacts</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-row">
-                <div class="timeline-time">
-                    8:00 AM<small>Dec 18</small>
-                </div>
-                <div class="timeline-content">
-                    <i class="icon-code"></i>
-                    <h4>Admin Dashboard!</h4>
-                    <p>
-                        Maxwell Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar.
-                    </p>
-                    <div class="thumbs">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                            alt="Maxwell Admin">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar4.png"
-                            alt="Maxwell Admin">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                            alt="Maxwell Admin">
-                    </div>
-                    <div class="">
-                        <span class="badge badge-pill">Ecommerce</span>
-                        <span class="badge badge-pill">CRM</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-row">
-                <div class="timeline-time">
-                    7:45PM<small>Dec 21</small>
-                </div>
-                <div class="timeline-content">
-                    <i class="icon-attachment"></i>
-                    <h4>Admin Template!</h4>
-                    <p>Maxwell Admin Dashboard contains C3 graphs, flot graphs, data tables, calendar, drag &amp; drop
-                        and ion slider.</p>
-                    <div class="thumbs">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                            alt="Maxwell Admin">
-                        <img class="img-fluid rounded" src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                            alt="Maxwell Admin">
-                    </div>
-                    <div class="">
-                        <span class="badge badge-pill">Orders</span>
-                        <span class="badge badge-pill">Sales</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-row">
-                <div class="timeline-content">
-                    <p class="m-0">Loading...</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
     <!--Footer-->
 
 
     <!--Bootstrap, Jquery, FontAwesome-->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/d064d6765b.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
