@@ -1,6 +1,7 @@
-
-
 $(document).ready(function () {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
     var mySwiper = new Swiper(".swiper", {
         autoHeight: true,
         autoplay: {
@@ -36,4 +37,10 @@ $(document).ready(function () {
         $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
         $(this).addClass("active");
     });
+
+
+
+
 });
+
+

@@ -8,6 +8,13 @@ a {
     color: #383838
 }
 
+a:hover {
+    color: #000;
+    background-color: #FAEDCD;
+
+
+}
+
 
 
 /*Nav Bar*/
@@ -26,6 +33,8 @@ a {
 
 .nav-link {
     color: #383838;
+    background-color: none;
+    text-decoration: none;
 }
 
 .logo {
@@ -79,6 +88,7 @@ a {
 .landing-header {
     font-family: 'DM Serif Display';
     font-size: 4rem;
+
 }
 
 .landing-text {
@@ -131,6 +141,7 @@ a {
     .landing-text {
         margin-right: 0;
         text-align: center;
+        margin-top: 6.6%;
     }
 
     .landing-contact-me {
@@ -185,7 +196,9 @@ a {
     font-family: 'DM Serif Display';
     font-size: 3rem;
     font-weight: 100;
-
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
 }
 
 /*Swiper*/
@@ -194,28 +207,51 @@ a {
     font-family: "Montserrat";
     font-size: 2em;
 }
-.title{
+
+.title {
     font-family: "Montserrat";
     font-size: 2em;
-    font-weight: 600;
+
 }
 
 .swiper-container-wrapper--timeline .swiper-slide {
     display: flex;
-    background: #CCD5AE;
+    background: #eeebe6;
+
 
     min-height: 500px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     padding: 50px;
+
+}
+
+@media (max-width: 576px) {
+    .swiper-container-wrapper--timeline .swiper-slide {
+        width: 400px;
+        height: fit-content;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 475px) {
+    .swiper-container-wrapper--timeline .swiper-slide {
+        min-height: 700px;
+        width: 300px;
+    }
 }
 
 .swiper-container-wrapper--timeline .swiper-slide .container {
     display: flex;
-    overflow: hidden;
+
     width: auto;
     height: auto;
+}
+
+.container {
+    overflow: visible;
+
 }
 
 .swiper-container-wrapper--timeline .swiper-slide .title {
@@ -253,14 +289,25 @@ a {
     content: "";
 }
 
+.swiper-slide-active {}
+
 .swiper-container-wrapper--timeline .swiper-pagination-progressbar:after {
-    position: relative;
+    position: absolute;
     top: 3px;
     right: -44%;
-    width: 100%;
+    width: 44%;
     height: 1px;
-    background-color: #888;
+
     content: "";
+    border-top: 1px solid #999;
+}
+
+.arrow-progressbar {
+    position: absolute;
+    z-index: 3;
+    color: #888;
+    left: 92%;
+
 }
 
 .swiper-container-wrapper--timeline .swiper-pagination-custom {
@@ -329,4 +376,133 @@ a {
 
 .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active~.swiper-pagination-switch .switch-title:after {
     background: #888;
+}
+
+/* Showcase */
+#showcase {
+    margin-top: 12%;
+}
+
+.showcase-container {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.showcase-slide {
+    display: flex;
+    overflow: hidden;
+    background: #CCD5AE;
+    position: relative;
+    height: 400px;
+    width: 900px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 50px;
+    margin-bottom: 4%;
+    box-shadow: 0px 0px 10000px rgba(0, 0, 0, 0.4);
+}
+.even{
+    background-color: #D4A373;
+}
+.even .showcase-slide-text {
+    color: #FFF;
+}
+
+.showcase-container div {
+
+
+    transition: 0.6s cubic-bezier(0.15, 0.5, 0.35, 1);
+}
+
+.showcase-slide:hover {
+    width: 1000px;
+    height: 500px;
+
+    transition: 0.5s ease-in-out;
+}
+.showcase-slide:hover img {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+transform: scale(1.3);
+    transition: 0.5 ease-in;   
+}
+.showcase-slide:hover p {
+    display: inherit;
+    -webkit-line-clamp: none;
+    -webkit-box-orient: vertical; 
+    overflow: visible;
+}
+.showcase-slide-container h1 {
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    font-weight: 600;
+    font-family: "DM Serif Display";
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 99px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    transform: translateY(-50%);
+}
+.showcase-slide-container h4 {
+    position: absolute;
+
+    left: 50px;
+    top: 60px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+}
+.showcase-slide-container.odd h4 {
+    color: #383838;
+}
+.showcase-slide-container.even h4 {
+    color: #FEFAF6;
+}
+
+.showcase-slide-container p {
+    position: absolute;
+    left: 50px;
+    top: 220px;
+    width: 400px;
+    height: 110px;
+
+    
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.showcase-slide-container img{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    height: 400px;
+    width: 400px;
 }

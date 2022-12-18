@@ -24,6 +24,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/d064d6765b.js" crossorigin="anonymous"></script>
     <script src="/js/slider.js"></script>
+    <script src="/js/showcase-magnifier.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
@@ -131,36 +132,165 @@
                     <li class='swiper-pagination-switch'><span class='switch-title'>2017</span></li>
                     <li class='swiper-pagination-switch'><span class='switch-title'>2020</span></li>
                     <li class='swiper-pagination-switch last'><span class='switch-title'>2022</span></li>
-                    
+
                 </ul>
                 <!-- Progressbar -->
+                <!-- <i class="fa-solid fa-chevron-right arrow-progressbar"></i> -->
                 <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+
                 <!--About that section-->
 
                 <!-- Swiper -->
                 <div class="swiper swiper-container swiper-container--timeline">
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide"><span class="title"><h1>Feeling Scratchy</h1><br>Bored on a sunny Lebanese summer day, I asked my
+                        <div class="swiper-slide"><span class="title">
+                                <h1>Feeling Scratchy</h1><br>Bored on a sunny Lebanese summer day, I asked my
                                 father for something to do, and was introduced to <a
                                     href="https://www.scratch.mit.edu">scratch</a>. Here, I learned so much about the
-                                essential foundations of programming and computational thought. Little did I know that the rest of my life would be spent in the world of code.<br><br>What I learned from scratch was that I loved to create things, and that I loved to learn. I created so many games and animations, and I was hooked. Sprites became a part of my life, and I was in love with the idea of creating something from nothing.
+                                essential foundations of programming and computational thought. Little did I know that
+                                the rest of my life would be spent in the world of code.<br><br>What I learned from
+                                scratch was that I loved to create things, and that I loved to learn. I created so many
+                                games and animations, and I was hooked. Sprites became a part of my life, and I was in
+                                love with the idea of creating something from nothing.
                             </span></div>
-                        <div class="swiper-slide"><span class="title"><h1>Snakes in Boots</h1><br>In 2015, I completed a <a
-                                    href="ADD Course section">course</a> from Pirean Data on python and learned everything from the ground up. I built so many programs and wasted so much time on IDLE creating adventure games and console games. I was in love with the idea of creating something from nothing. I was hooked.<br><br>Leaving what felt like an impractical platform like scratch to Python was a big step, but I was so happy to have taken it. I learned so much about the world of programming, and I was so happy to have taken that step and pushing myself further than I thought I could go.
-                                </span></div>
-                        <div class="swiper-slide"><span class="title"><h1>App Dev</h1><br>Around 2017, I started to get really interested in app development,
-                            and to that end, I learned <b>Swift, Flutter, SwiftUI, Bootstrap, and Dart.</b> In December of 2019, I landed a
-                            keynote presentation at <b>Apple's</b> Today@Apple program as a guest speaker talking about my
-                            journey into iOS app development and helped audience members create their very first app!
-                            <br><br>I also founded the IDJ, an online platform of iOS developers who help each other get
-                            started and answer any questions they might have. I learned so much about leadership and
-                            inclusion while fulfilling that role.
-</span></div>
-                        <div class="swiper-slide"><span class="title"><h1>Finding Moira</h1><br>While I was in quarantine, I realized that what I truly felt passion for was Education. I wanted to help spread the knowledge and skills I accumulated over years of hard work and dedication to as much people as I could.<br><br> I joined dozens of online communities over discord and started teaching a class around the foundations of programming and spent hours shaping the curriculum to each student in the class. It was truly an incredible thing to be part of. Education is the future, and I'm so excited to be a part of it and I'm incredibly excited to leverage computer science to create an impact.
-                        </span></div>
-                        <div class="swiper-slide"><span class="title"><h1>Creating Impact</h1><br>In 2022, I decided to jump in headfirst and complete a 6 month internship with <a href="https://massarat.com">Massarat</a> a startup in Lebanon that is at the forefront of assesments and ed-tech globally. During my internship, I was responsible for the iOS application; I migrated API's, worked on the front end, and also provided feedback from a student presprective only being 16 years old.<br><br>What Massarat taught me was that the real world was not different than my desk. I learned that I could affect change in my community from my study desk and that I didn't need a bachelor's degree to do so.</span></div>
-                        
+                        <div class="swiper-slide"><span class="title">
+                                <h1>Snakes in Boots</h1><br>In 2015, I completed a <a
+                                    href="ADD Course section">course</a> from Pirean Data on python and learned
+                                everything from the ground up. I built so many programs and wasted so much time on IDLE
+                                creating adventure games and console games. I was in love with the idea of creating
+                                something from nothing. I was hooked.<br><br>Leaving what felt like an impractical
+                                platform like scratch to Python was a big step, but I was so happy to have taken it. I
+                                learned so much about the world of programming, and I was so happy to have taken that
+                                step and pushing myself further than I thought I could go.
+                            </span></div>
+                        <div class="swiper-slide"><span class="title">
+                                <h1>App Dev</h1><br>Around 2017, I started to get really interested in app development,
+                                and to that end, I learned <b>Swift, Flutter, SwiftUI, Bootstrap, and Dart.</b> In
+                                December of 2019, I landed a
+                                keynote presentation at <b>Apple's</b> Today@Apple program as a guest speaker talking
+                                about my
+                                journey into iOS app development and helped audience members create their very first
+                                app!
+                                <br><br>I also founded the IDJ, an online platform of iOS developers who help each other
+                                get
+                                started and answer any questions they might have. I learned so much about leadership and
+                                inclusion while fulfilling that role.
+                            </span></div>
+                        <div class="swiper-slide"><span class="title">
+                                <h1>Finding <a href="" data-bs-toggle="tooltip"
+                                        data-bs-title="Individual destiny : the will of the gods : FATE">Moira</a></h1>
+                                <br>While I was in quarantine, I realized that what I truly felt passion for was
+                                Education. I wanted to help spread the knowledge and skills I accumulated over years of
+                                hard work and dedication to as much people as I could.<br><br> I joined dozens of online
+                                communities over discord and started teaching a class around the foundations of
+                                programming and spent hours shaping the curriculum to each student in the class. It was
+                                truly an incredible thing to be part of. Education is the future, and I'm so excited to
+                                be a part of it and I'm incredibly excited to leverage computer science to create an
+                                impact.
+                            </span></div>
+                        <div class="swiper-slide"><span class="title">
+                                <h1>Creating Impact</h1><br>In 2022, I decided to jump in headfirst and complete a 6
+                                month internship with <a href="https://massarat.com">Massarat</a> a startup in Lebanon
+                                that is at the forefront of assesments and ed-tech globally. During my internship, I was
+                                responsible for the iOS application; I migrated API's, worked on the front end, and also
+                                provided feedback from a student presprective only being 16 years old.<br><br>What
+                                Massarat taught me was that the real world was not different than my desk. I learned
+                                that I could affect change in my community from my study desk and that I didn't need a
+                                bachelor's degree to do so.
+                            </span></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="showcase" style="height:1000px;">
+        <h1 class="timeline-header-text">Stuff I've been a part of</h1>
+        <div class="showcase-container">
+
+            <div class="showcase-slide">
+                <div class="showcase-slide-container odd">
+
+                    <div class="showcase-slide-text">
+
+                        <div>
+                            <h4>KEYNOTE SPEECH</h4>
+                        </div>
+                        <h1>Today@Apple</h1>
+                        <p>During December of 2019, I had the honor of being the guest speaker of Apple's <a
+                                href="https://www.apple.com/today/">Today@Apple</a> program where I presented about my
+                            journey as an app developer and how I got into <a href="#skills" data-bs-toggle="tooltip"
+                                data-bs-title="This will take you away from this section!">Swift</a>. <br><br>I learned
+                            that I loved to teach!</p>
+                    </div>
+                    <div class="showcase-slide-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
+                            class="">
+                    </div>
+                </div>
+            </div>
+            <div class="showcase-slide even">
+                <div class="showcase-slide-container even">
+
+                    <div class="showcase-slide-text">
+                        <h4>iOS Application</h4>
+                        <h1>Madrastie</h1>
+                        <p>I completed a six month internship with Massarat, a Lebanese startup who create an online
+                            assessment platform that extracts insights from K-12 students using powerful AI. I was
+                            responsible for migrating APIs, creating GUIs, and offering my insight as a current student.
+                        </p>
+                    </div>
+                    <div class="col-lg-5 showcase-slide-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
+                            class="d-block mx-lg-auto img-fluid landing-face-img" alt="Bootstrap Themes" width="200px"
+                            height="200px" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="showcase-slide">
+                <div class="showcase-slide-container odd">
+
+                    <div class="showcase-slide-text">
+                        <h4>MENTORING</h4>
+                        <h1>Python Club</h1>
+                        <p>In 2018, I created an orgnization that would teach students at my school about <a href="#skills" data-bs-toggle="tooltip"
+                            data-bs-title="This will take you away from this section!">Python</a>.  This bootcamp is still active today and the impact I've created, and the impact imparted on me, was truly incredible.</p>
+                    </div>
+                    <div class="col-lg-5 showcase-slide-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
+                            class="d-block mx-lg-auto img-fluid landing-face-img" alt="Bootstrap Themes" width="200px"
+                            height="200px" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="showcase-slide even">
+                <div class="showcase-slide-container">
+
+                    <div class="showcase-slide-text">
+                        <h4>KEYNOTE SPEECH</h4>
+                        <h1>Today@Apple</h1>
+                        <p>Keynote speaker at Apple's Today@Apple program</p>
+                    </div>
+                    <div class="showcase-slide-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
+                            class="d-block mx-lg-auto img-fluid landing-face-img" alt="Bootstrap Themes" width="200px"
+                            height="200px" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="showcase-slide odd">
+                <div class="showcase-slide-container row">
+
+                    <div class="col-lg-7 showcase-slide-text">
+                        <h4>KEYNOTE</h4>
+                        <h1>Today@Apple</h1>
+                        <p>Keynote speaker at Apple's Today@Apple program</p>
+                    </div>
+                    <div class="col-lg-5 showcase-slide-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
+                            class="d-block mx-lg-auto img-fluid landing-face-img" alt="Bootstrap Themes" width="200px"
+                            height="200px" loading="lazy">
                     </div>
                 </div>
             </div>
