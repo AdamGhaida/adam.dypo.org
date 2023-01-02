@@ -290,7 +290,7 @@ a {
     content: "";
 }
 
-.swiper-slide-active {}
+
 
 .swiper-container-wrapper--timeline .swiper-pagination-progressbar:after {
     position: absolute;
@@ -1154,7 +1154,7 @@ input[type=mail] {
 hr {
     width: 90%;
     margin: 2px auto;
-    opacity: 40%;
+    opacity: 0.4;
     border: 0.01px solid white;
 
 }
