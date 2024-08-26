@@ -1,7 +1,6 @@
 body {
     background: #FEFAF6;
     color: #383838;
-    min-width: 100%;
 }
 
 a {
@@ -39,6 +38,7 @@ a {
 
 .logo {
     width: 35%;
+    
 
 }
 
@@ -175,6 +175,8 @@ a {
 /*Timeline*/
 #timeline {
     padding-top: 7%;
+    overflow-x: hidden;
+
 }
 
 .timeline-container {
@@ -290,7 +292,10 @@ a {
     content: "";
 }
 
-
+.starwars_skew{
+    transform: rotateX(25deg) translateZ(100px);
+    transform-origin: 50% 100%
+}
 
 .swiper-container-wrapper--timeline .swiper-pagination-progressbar:after {
     position: absolute;
