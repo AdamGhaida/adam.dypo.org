@@ -46,7 +46,6 @@
 </head>
 
 <body>
-
     <!--Nav Bar-->
     <section id="nav-bar">
         <div class="nav-div">
@@ -90,8 +89,26 @@
         </div>
     </section>
     <!--landing-->
-    <section id="landing">
+    <div class="alert_container">
+		<div class="alert alert-warning">
+			<div class="alert-icon">
+				<span class="material-symbols-outlined">
+					Note to 07-129 staff
+				</span>
+			</div>
+			<div class="alert-text">
+                For 07-129, please click <a href="07129.html">here</a>
+			</div>
+		</div>
+	</div>
+    <script>
+		const alertBox = document.querySelector(".alert");
 
+		setTimeout(() => alertBox.remove(), 10000);
+	</script>
+
+    <section id="landing">
+        
 
         <div class="row landing-container fluid-container ">
 
