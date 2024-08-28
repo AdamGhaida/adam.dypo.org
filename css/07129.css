@@ -9,12 +9,10 @@
 }
 
 .video-container{
-    margin-top: 40%;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    
 
 }
 
