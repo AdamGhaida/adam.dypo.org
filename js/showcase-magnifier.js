@@ -27,6 +27,7 @@ $(function() {
       return array[num].element;
     }
   
+    //fix this
   });
   
   
